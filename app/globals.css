@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+.generator {
+  /* position: relative; */
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --margin: 80px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 768px) and (max-width: 960px) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --margin: 60px;
+  }
+  hr {
+    width: 60vw;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 768px) {
+  :root {
+    --margin: 20px;
+  }
+  hr {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 960px) {
+  hr {
+    width: 40vw;
+  }
+}
+
+.generator::before {
+  content: '';
+  background: url('/bg.svg') no-repeat;
+  background-size: calc(100% - (2 * var(--margin)))
+    calc(100% - (2 * var(--margin))); /* reduce size by 2*margin on all sides */
+  background-position: center; /* center the background image */
+  opacity: 0.03;
+  top: var(--margin); /* add margin on all sides */
+  left: var(--margin);
+  bottom: var(--margin);
+  right: var(--margin);
+  position: absolute;
+  z-index: -1;
+}
+
+hr {
+  margin: 0 auto;
+  border: 0px;
+  border-top: 1px solid #373962;
+  border-bottom: 1px solid #373962;
+  display: block;
+}
+
+.footer {
+  color: #373962;
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
 }
