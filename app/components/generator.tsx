@@ -15,7 +15,9 @@ export default function Generator() {
           Electo, Javier Milei, encabezó esta mañana una reunión con sus equipos
           técnicos. <br />
           Lo acompañaron Nicolás Posse, Diana Mondino, Guillermo Francos y
-          Karina Milei. <br /> <br />
+          Karina Milei. <br />  <br />
+          CLICKEA PARA EDITAR
+          <br />  <br />
           Por otro lado, el Presidente electo recibió anoche el llamado del ex
           Presidente de los Estados Unidos, Donald Trump, quien lo felicitó y
           señaló que el triunfo por amplia diferencia en la elección del domingo
