@@ -4,7 +4,9 @@ export default function Generator() {
   return (
     <div className="generator">
       <div className="flex justify-center items-center mt-5 mb-8">
-        <Image src="/bg.svg" width={125} height={125} alt="" />
+        <a href="https://github.com/ezegatica/ope-generador">
+          <Image src="/bg.svg" width={125} height={125} alt="" />
+        </a>
       </div>
       <p className="text-center uppercase font-semibold text-xl mb-10">
         Comunicado de Prensa
@@ -15,9 +17,9 @@ export default function Generator() {
           Electo, Javier Milei, encabezó esta mañana una reunión con sus equipos
           técnicos. <br />
           Lo acompañaron Nicolás Posse, Diana Mondino, Guillermo Francos y
-          Karina Milei. <br />  <br />
+          Karina Milei. <br /> <br />
           CLICKEA PARA EDITAR
-          <br />  <br />
+          <br /> <br />
           Por otro lado, el Presidente electo recibió anoche el llamado del ex
           Presidente de los Estados Unidos, Donald Trump, quien lo felicitó y
           señaló que el triunfo por amplia diferencia en la elección del domingo
