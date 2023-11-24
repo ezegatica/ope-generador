@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.generator {
-  /* position: relative; */
-}
 :root {
   --margin: 80px;
+}
+
+body {
+  height: 100vh;
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
@@ -58,8 +59,7 @@ hr {
 
 .footer {
   color: #373962;
-  position: fixed;
-  left: 0;
-  bottom: 20px;
   width: 100%;
+  padding: 20px 0;
+  margin-top: auto;
 }

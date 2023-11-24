@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 export default function Generator() {
   return (
-    <div className="generator">
-      <div className="flex justify-center items-center mt-5 mb-8">
+    <div className="generator max-w-xl mx-auto">
+      <div className="flex justify-center items-center pt-5 mb-8">
         <a href="https://github.com/ezegatica/ope-generador">
           <Image src="/bg.svg" width={125} height={125} alt="" />
         </a>
